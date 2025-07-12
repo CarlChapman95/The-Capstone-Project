@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 20%;
+  padding: 1em;
+  background-color: #f0f0f0;
+}
+
+.calendar {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1em;
+}
+
+.day {
+  border: 1px solid #ccc;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
