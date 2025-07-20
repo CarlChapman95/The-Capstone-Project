@@ -1,1 +1,64 @@
-### The Diet and excersice weekly tracker with meal prep? ###
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="/css/style.css"> <!-- This links your CSS -->
+</head>
+
+</head>
+<body>
+    <div class="container">
+  <aside class="sidebar">
+    <h2>User Info</h2>
+    <label>Age: <input type="number" id="ageInput"></label>
+    <label>Weight (kg): <input type="number" id="weightInput"></label>
+    <label>Height (cm): <input type="number" id="heightInput"></label>
+    <button onclick="calculateBMI()">Calculate BMI</button>
+    <div id="bmiResult"></div>
+  </aside>
+
+  <main class="calendar">
+    <div class="week">
+      <div class="day" id="sunday"> <!-- Repeat for all 7 days -->
+        <div class="exercises"></div>
+         <div class="calories">Calories: <span class="calorie-count">0</span></div>
+        <input type="text" placeholder="Add exercise">
+      </div>
+      <!-- Repeat for other days -->
+       <div class="day" id="monday"> <!-- Repeat for all 7 days -->
+ <div class="calories">Calories: <span class="calorie-count">0</span></div>        <div class="exercises"></div>
+        <input type="text" placeholder="Add exercise">
+      </div>
+      <div class="day" id="tuesday"> <!-- Repeat for all 7 days -->
+        <div class="calories">Calories: <span>0</span></div>
+        <div class="exercises"></div>
+        <input type="text" placeholder="Add exercise">
+      </div>
+      <div class="day" id="wednesday"> <!-- Repeat for all 7 days -->
+        <div class="calories">Calories: <span>0</span></div>
+        <div class="exercises"></div>
+        <input type="text" placeholder="Add exercise">
+      </div>
+      <div class="day" id="thursday"> <!-- Repeat for all 7 days -->
+        <div class="calories">Calories: <span>0</span></div>
+        <div class="exercises"></div>
+        <input type="text" placeholder="Add exercise">
+      </div>
+      <div class="day" id="friday"> <!-- Repeat for all 7 days -->
+        <div class="calories">Calories: <span>0</span></div>
+        <div class="exercises"></div>
+        <input type="text" placeholder="Add exercise">
+      </div>
+      <div class="day" id="saturday"> <!-- Repeat for all 7 days -->
+        <div class="calories">Calories: <span>0</span></div>
+        <div class="exercises"></div>
+        <input type="text" placeholder="Add exercise">
+      </div>
+    </div>
+  </main>
+</div>
+<script src="/js/index.js"></script>
+</body>
+</html>
